@@ -54,7 +54,7 @@ I decided to search window positions at ...
 
 ![alt text][image3]
 
-#### 2. Examples and optimization of the classifier?
+#### 2. Examples and optimization of the classifier.
 
 Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
 
