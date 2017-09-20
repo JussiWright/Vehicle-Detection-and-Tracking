@@ -1,4 +1,5 @@
 ## Vehicle Detection Project
+#### Self Driving Cars
 
 The goals / steps of this project are the following:
 * Perform a Histogram of Oriented Gradients (HOG) feature extraction on a labeled training set of images and train a classifier Linear SVM classifier
@@ -49,7 +50,7 @@ I trained a linear SVM using...
 
 #### 1. Describtion of implemented sliding window search. Scales to search and overlap windows.
 
-I decided to search random window positions at random scales all over the image and came up with this (ok just kidding I didn't actually ;):
+I decided to search window positions at ...
 
 ![alt text][image3]
 
