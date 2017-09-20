@@ -37,23 +37,23 @@ Here is an example using the `YCrCb` color space and HOG parameters of `orientat
 
 ![alt text][image2]
 
-####2. HOG parameters.
+#### 2. HOG parameters.
 
 I tried various combinations of parameters and...
 
-####3. Description of the trained a classifier using your selected HOG features (and color features if you used them).
+#### 3. Description of the trained a classifier using your selected HOG features (and color features if you used them).
 
 I trained a linear SVM using...
 
-###Sliding Window Search
+### Sliding Window Search
 
-####1. Describtion of implemented sliding window search. Scales to search and overlap windows.
+#### 1. Describtion of implemented sliding window search. Scales to search and overlap windows.
 
 I decided to search random window positions at random scales all over the image and came up with this (ok just kidding I didn't actually ;):
 
 ![alt text][image3]
 
-####2. Examples and optimization of the classifier?
+#### 2. Examples and optimization of the classifier?
 
 Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spatially binned color and histograms of color in the feature vector, which provided a nice result.  Here are some example images:
 
@@ -62,10 +62,10 @@ Ultimately I searched on two scales using YCrCb 3-channel HOG features plus spat
 
 ### Video Implementation
 
-####1. Here's a [link to my video result](./project_video.mp4)
+#### 1. Here's a [link to my video result](./project_video.mp4)
 
 
-####2. Description of the implemented filter for false positives and method for combining overlapping bounding boxes.
+#### 2. Description of the implemented filter for false positives and method for combining overlapping bounding boxes.
 
 I recorded the positions of positive detections in each frame of the video.  From the positive detections I created a heatmap and then thresholded that map to identify vehicle positions.  I then used `scipy.ndimage.measurements.label()` to identify individual blobs in the heatmap.  I then assumed each blob corresponded to a vehicle.  I constructed bounding boxes to cover the area of each blob detected.  
 
@@ -83,6 +83,6 @@ Here's an example result showing the heatmap from a series of frames of video, t
 
 ---
 
-###Discussion
+### Discussion
 
 
